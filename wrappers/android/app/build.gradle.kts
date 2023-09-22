@@ -8,7 +8,7 @@ android {
     defaultConfig {
         applicationId = "com.example.zxingdemo"
         compileSdk = libs.versions.androidCompileSdk.get().toInt()
-        minSdk = 26 // for the adaptive icons. TODO: remove adaptive icons and lower to API 21
+        minSdk = libs.versions.androidMinSdk.get().toInt()
         targetSdk = libs.versions.androidTargetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
